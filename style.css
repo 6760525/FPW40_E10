@@ -28,9 +28,8 @@ ul {
   list-style: none;
 }
 body {
-  background-image: url(./img/bg.jpg), url(./img/bg.jpg);
+  background-image: url(./img/bg.jpg);
   background-position: left top, right bottom;
-  background-repeat: no-repeat;
   background-size: inherit;
 }
 .main-block {
@@ -45,18 +44,18 @@ body {
   max-width: calc(100vw - 20ch);
   overflow: hidden;
 }
-.card {
+.field {
   display: flex;
   flex-flow: column wrap;
 }
-.personal-info {
+.info {
   background: var(--white);
   border-radius: 1.5rem;
   margin: 2rem;
   position: fixed;
 }
 
-.personal-info img {
+.info img {
   border-radius: 25%;
   background: var(--see-through);
   padding: 1.75rem;
@@ -83,7 +82,7 @@ body {
   margin: 0.5rem 2rem;
   color: var(--dark-grey);
 }
-.resume__header {
+.about__header {
   font-size: 1.75rem;
 }
 .social {
@@ -106,7 +105,7 @@ body {
 .contact-block__item {
   padding: 0.3rem 1rem;
 }
-.resume {
+.main {
   background: var(--white);
   border-radius: 1.5rem;
   margin: 2rem 1rem;
@@ -131,20 +130,41 @@ body {
   background-color: var(--orange);
   width: 3rem;
 }
-.resume__p {
+.about__p {
   padding: 1rem 0;
 }
-.skills {
+.about__icon i {
+  font-size: 4rem;
+  padding: 1rem;
+  color: var(--orange);
+}
+.about__field {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  background: var(--white);
+  padding: 1rem;
+  border-radius: 1.5rem;
+}
+.about__text {
+  padding: 1rem;
+}
+
+
+.facts {
   padding: 2rem;
   background: var(--light-grey);
 }
-.skills__cards_wrapper {
+.facts__header {
+  font-size: 1.75rem;
+}
+.facts__wrapper {
   display: flex;
   flex-flow: row wrap;
   gap: 1rem;
   justify-content: space-evenly;
 }
-.skills__card {
+.facts__field {
   display: flex;
   flex-flow: row wrap;
   width: 48%;
@@ -152,31 +172,31 @@ body {
   padding: 1rem;
   border-radius: 1.5rem;
 }
-.skills__icon i {
+.facts__icon i {
   font-size: 4rem;
   padding: 1rem;
   color: var(--navy-blue);
 }
 
-.skills__card_text {
+.facts__text {
   padding: 1rem;
 }
 
-.cv {
+.hd {
   padding: 1.5rem;
 }
-.cv .content * {
+.hd .content * {
   padding: 0.25rem 0;
 }
-.cv ul {
+.hd ul {
   list-style: circle inside;
 }
 
-.cv__header {
+.hd__header {
   margin: 0.5rem 0;
   font-size: 2.75ch;
 }
-.cv__subheader {
+.hd__subheader {
   font-size: 2ch;
 }
 .timeline {
@@ -342,7 +362,7 @@ img {
   .main-block {
     max-width: 95vw;
   }
-  .resume__header {
+  .about__header {
     text-align: center;
   }
   .about-me::before,
